@@ -1,3 +1,19 @@
-<div id="container-mf1"></div>
+<div id="container-mf1">
+  <ng-container *ngIf="!estaTemplateInicial; else templateSecundario">
+    <div id="template-inicial-container">
+      <h2>Template Inicial</h2>
+
+      <button (click)="mudarTemplate()">Mudar Template</button>
+    </div>
+  </ng-container>
+
+  <ng-template #templateSecundario>
+    <div id="template-inicial-container">
+      <h2>Template Secundário</h2>
+
+      <button (click)="mudarTemplate()">Mudar Template</button>
+    </div>
+  </ng-template>
+</div>
 
 <router-outlet></router-outlet>
