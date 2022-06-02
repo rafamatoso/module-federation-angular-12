@@ -18,6 +18,10 @@ html {
   padding: 0;
 }
 
+* {
+  font-family: Roboto;
+}
+
 h1,
 h2,
 h3,
